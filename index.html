@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="main_body">
+        <div class="screen_row">
+            <div class="screen">
+                <div id="upper_text">
+
+                </div>
+                <div id="text" class="text">
+                    
+                </div>
+            </div>
+            <button id='Backspace' class="delete operators" value='delete' onclick="removeSign()"> ← </button>
+        </div>
+        <div class="row">
+            <button id='Escape' class="erase operators" value='x' onclick="clearAll()"> AC </button>
+            <button id='^' class="operators" value='^' onclick="addOnScreen(); showOnScreen(this)"> x <sup>y</sup></button>
+            <button id='!' class="operators" value='!' onclick="addOnScreen(); showOnScreen(this)"> x! </button>
+            <button id='/' class="operators" value='/' onclick="addOnScreen(); showOnScreen(this)"> / </button>
+
+        </div>
+        <div class="row">
+            <button id='1' class="numbers" value=1 onclick="showOnScreen(this)"> 1 </button>
+            <button id='2' class="numbers" value=2 onclick="showOnScreen(this)"> 2 </button>
+            <button id='3' class="numbers" value=3 onclick="showOnScreen(this)"> 3 </button>
+            <button id='+' class="operators" value='+' onclick="addOnScreen(); showOnScreen(this)"> + </button>
+        </div>
+        <div class="row">
+            <button id='4' class="numbers" value=4 onclick="showOnScreen(this)"> 4 </button>
+            <button id='5' class="numbers" value=5 onclick="showOnScreen(this)"> 5 </button>
+            <button id='6' class="numbers" value=6 onclick="showOnScreen(this)"> 6 </button>
+            <button id='-' class="operators" value='−' onclick="addOnScreen(); showOnScreen(this)"> − </button>
+        </div>
+        <div class="row">
+            <button id='7' class="numbers" value=7 onclick="showOnScreen(this)"> 7 </button>
+            <button id='8' class="numbers" value=8 onclick="showOnScreen(this)"> 8 </button>
+            <button id='9' class="numbers" value=9 onclick="showOnScreen(this)"> 9 </button>
+            <button id='*' class="operators" value='*' onclick="addOnScreen(); showOnScreen(this)"> * </button>
+        </div>
+        <div class="row">
+            <button id='\' class="float" value='s' onclick="changeSign()"> +/- </button>
+            <button id='0' class="numbers" value=0 onclick="showOnScreen(this)"> 0 </button>
+            <button id='.' class="float" value='.' onclick="showOnScreen(this)"> . </button>
+            <button id='Enter' class="sum" value='=' onclick="addOnScreen()"> = </button>
+
+
+        </div>
+        <div class="row">
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
